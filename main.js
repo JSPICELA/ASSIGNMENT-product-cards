@@ -126,27 +126,28 @@ const targetingApp = document.querySelector("#app");
 let domString = "";
 
 for (let card of cards) {
-  domString += `<div class="card" style="width: 18rem;">
+  domString += `<div class="card text-center" style="width: 18rem;">
   <div class= "card-body">
-    <h2 class= "card-title">${card.productTitle}</h2>
+    <h2 class="card-title">${card.productTitle}</h2>
     <hr>
     <img src=${card.imageUrl} class="card-img-top" alt= ${card.productTitle}>
     <p class="card-text">${card.description}</p>
-    <p>${card.isAvaible}</p>
+    <p class="available">${card.isAvaible}</p>
 
-    <section class="specifications">
+    <div class="specifications">
       <h3>Specifications</h3>
       <p><strong>${card.specifications.size}</strong></p>
       <p><strong>${card.specifications.weight}</strong></p>
       <footer>${card.specifications.validTill}</footer>
-    </section>
+    </div>
 
-    <section class="pricing">
+    <div class="pricing">
       <h3>Pricing</h3>
       <p><strong>1: $${card.pricing.first}</strong></p>
       <p><strong> 2-50: $${card.pricing.second}</strong></p>
       <p><strong>$ 51+: ${card.pricing.third}</strong></p>
-    </section>
+      </div>
+    </div>
   </div>`;
 }
 targetingApp.innerHTML = domString;
