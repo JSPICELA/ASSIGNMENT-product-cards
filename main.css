@@ -1,17 +1,24 @@
 
-
 #app {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.card-title {
-  color: lightblue;
-  border: solid 1px;
+
+.card {
+  margin: 1rem;
+  flex-basis: 30%;
+
 }
 
 .card-body {
-  flex-direction: row;
-  flex-wrap: wrap;
+  border: solid lightblue 1px
 }
+
+.available {
+  display: block;
+  color: yellow;
+  background-color: darkgray;
+}
+
