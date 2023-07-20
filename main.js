@@ -3,7 +3,7 @@ const cards = [
     id: 1,
     productTitle: "Yellow Dunk Cards",
     imageUrl: "./assets/yellow-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -23,7 +23,7 @@ const cards = [
     id: 2,
     productTitle: "Red Dunk Cards",
     imageUrl: "./assets/red-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -43,7 +43,7 @@ const cards = [
     id: 3,
     productTitle: "Blue Dunk Cards",
     imageUrl: "./assets/blue-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -63,7 +63,7 @@ const cards = [
     id: 4,
     productTitle: "Pink Dunk Cards",
     imageUrl: "./assets/pink-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -83,7 +83,7 @@ const cards = [
     id: 5,
     productTitle: "Crimson Dunk Cards",
     imageUrl: "./assets/red-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -103,7 +103,7 @@ const cards = [
     id: 6,
     productTitle: "Cyan Dunk Cards",
     imageUrl: "./assets/blue-card.png",
-    description: "Waistcoat single-origin coffee tousled, mixtape chambray affogato pitchfork  kitsch locavore etsy pork belly poutine cold-pressed butcher.  Meh irony lomo, chillwave food truck ramps offal you probably haven't heard of them paleo cornhole venmo retro",
+    description: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     isAvaible: "Available",
 
     specifications: {
@@ -136,16 +136,16 @@ for (let card of cards) {
 
     <section class="specifications">
       <h3>Specifications</h3>
-      <p>${card.specifications.size}</p>
-      <p>${card.specifications.weight}</p>
+      <p><strong>${card.specifications.size}</strong></p>
+      <p><strong>${card.specifications.weight}</strong></p>
       <footer>${card.specifications.validTill}</footer>
     </section>
 
     <section class="pricing">
       <h3>Pricing</h3>
-      <p>${card.pricing.first}</p>
-      <p>${card.pricing.second}</p>
-      <p>${card.pricing.third}</p>
+      <p><strong>1: $${card.pricing.first}</strong></p>
+      <p><strong> 2-50: $${card.pricing.second}</strong></p>
+      <p><strong>$ 51+: ${card.pricing.third}</strong></p>
     </section>
   </div>`;
 }
