@@ -9,7 +9,7 @@ const cards = [
     specifications: {
       size: "4 x 4",
       weight: "8 0z",
-      validTill: "04/01/2023"
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -28,7 +28,8 @@ const cards = [
 
     specifications: {
       size: "4 x 4",
-      weight: "8 0z"
+      weight: "8 0z",
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -47,7 +48,8 @@ const cards = [
 
     specifications: {
       size: "4 x 4",
-      weight: "8 0z"
+      weight: "8 0z",
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -66,7 +68,8 @@ const cards = [
 
     specifications: {
       size: "4 x 4",
-      weight: "8 0z"
+      weight: "8 0z",
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -85,7 +88,8 @@ const cards = [
 
     specifications: {
       size: "4 x 4",
-      weight: "8 0z"
+      weight: "8 0z",
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -104,7 +108,8 @@ const cards = [
 
     specifications: {
       size: "4 x 4",
-      weight: "8 0z"
+      weight: "8 0z",
+      validTill: " Specifications valid until 04/01/2023"
     },
 
     pricing: {
@@ -123,18 +128,25 @@ let domString = "";
 for (let card of cards) {
   domString += `<div class="card" style="width: 18rem;">
   <div class= "card-body">
-    <h5 class= "card-title">${card.productTitle}</h5>
+    <h2 class= "card-title">${card.productTitle}</h2>
     <hr>
     <img src=${card.imageUrl} class="card-img-top" alt= ${card.productTitle}>
     <p class="card-text">${card.description}</p>
     <p>${card.isAvaible}</p>
-    <p>Specifications</p>
-    <p>${card.specifications.size}</p>
-    <p>${card.specifications.weight}</p>
-    <p>Pricing</p>
-    <p>${card.pricing.first}</p>
-    <p>${card.pricing.second}</p>
-    <p>${card.pricing.third}</p>
+
+    <section class="specifications">
+      <h3>Specifications</h3>
+      <p>${card.specifications.size}</p>
+      <p>${card.specifications.weight}</p>
+      <footer>${card.specifications.validTill}</footer>
+    </section>
+
+    <section class="pricing">
+      <h3>Pricing</h3>
+      <p>${card.pricing.first}</p>
+      <p>${card.pricing.second}</p>
+      <p>${card.pricing.third}</p>
+    </section>
   </div>`;
 }
 targetingApp.innerHTML = domString;
